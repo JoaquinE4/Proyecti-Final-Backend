@@ -25,5 +25,8 @@ export const config = {
     DEBUG:process.env.DEBUG,
     EMAIL_USER:process.env.EMAIL_USER,
     EMAIL_PASS:process.env.EMAIL_PASS,
-    ADMIN_ID: process.env.ADMIN_ID
+    ADMIN_ID: process.env.ADMIN_ID,
+    EMAIL:process.env.EMAIL,
+    PASSMAIL:process.env.PASSMAIL,
+
 };
