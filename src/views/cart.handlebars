@@ -1,0 +1,57 @@
+<div class="header container-fluid">
+  <div class="row d-flex p-xl-4 justify-content-between align-items-center">
+    <div class="col-md-4 d-flex">
+      <h2>Carrito de Compras</h2>
+    </div>
+
+    <div class="col-md-4 d-flex gap-3 align-items-center align-content-center justify-content-end  ">
+      <a href="/" class="btn btna ">Home</a>
+      <a href="/products" class="btn  btna ">Tienda</a>
+      <a href="/carts" class="btn btna  ">Carrito</a>
+      {{>menu}}
+
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <input type="text" value="{{carrito._id}}" id="carrito" hidden />
+
+  <div class="container p-5 d-flex flex-column justify-content-center align-items-center px-5 align-content-center"
+    id="tabla" style="display: block;  ">
+    <div class="w-auto h-auto border rounded p-5 mb-2  " id="tienda">
+      <h3>Su Carrito está vacío</h3>
+      <p class="text-center text-white">Vuelva a la tienda</p>
+      <a href="/products" class="btn w-auto  btna">Tienda</a>
+    </div>
+
+    <table class="table tables text-white" id="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Total ${{carrito.total}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each carrito.products}}
+        <tr>
+          <td>{{product.title}}</td>
+          <td>{{product.description}}</td>
+          <td>{{product.price}}</td>
+          <td>{{quantity}}</td>
+          <td><button class="btn btna" onclick="eliminar('{{product._id}}')">Eliminar</button></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <button class="btna btn mx-lg-5" id="btnEliminar" onclick="eliminarTodo()">Eliminar todo</button>
+    <button class="btna btn mx-lg-5" id="btnFinalizarCompra" onclick="finalizarCompra()">Finalizar compra</button>
+    
+  </div>
+</div>
+
+<script src="/js/carrito.js"></script>

@@ -1,0 +1,20 @@
+error: undefined {"code":400,"name":"Ya existe un producto con ese codigo","timestamp":"2024-09-04T14:58:46.161Z"}
+error: undefined {"code":400,"name":"Error Faltandatos Complete los datos solicitados","timestamp":"2024-09-04T14:58:57.766Z"}
+error: undefined {"code":400,"name":"Error Faltandatos Complete los datos solicitados","timestamp":"2024-09-04T14:59:06.608Z"}
+error: undefined {"code":400,"name":"Error Faltandatos Complete los datos solicitados","timestamp":"2024-09-04T14:59:13.847Z"}
+error: undefined {"timestamp":"2024-09-04T15:01:11.042Z"}
+error: undefined {"code":400,"name":"Error ID invalido","timestamp":"2024-09-04T15:01:26.414Z"}
+error: undefined {"code":400,"name":"Producto no encontrado","timestamp":"2024-09-04T15:01:34.471Z"}
+error: undefined {"code":400,"name":"Error No se encontro Carrito","timestamp":"2024-09-04T15:02:09.100Z"}
+error: undefined {"code":400,"name":"Error ID invalido","timestamp":"2024-09-04T15:02:14.089Z"}
+error: undefined {"code":400,"name":"Error ID invalido","timestamp":"2024-09-04T15:02:22.315Z"}
+error: undefined {"code":400,"name":"Error No se encontro Producto","timestamp":"2024-09-04T15:21:32.774Z"}
+error: undefined {"code":400,"name":"Error ID invalido","timestamp":"2024-09-04T15:21:38.052Z"}
+error: undefined {"code":400,"name":"Error No se encontro Usuario","timestamp":"2024-09-04T15:21:48.335Z"}
+error: undefined {"code":400,"name":"Error ID invalido","timestamp":"2024-09-04T15:22:01.066Z"}
+error: undefined {"code":"ERR_HTTP_HEADERS_SENT","timestamp":"2024-09-04T15:24:15.728Z"}
+error: Error en la validación de compra Cannot read properties of undefined (reading 'push') {"stack":"TypeError: Cannot read properties of undefined (reading 'push')\n    at validarCompra (file:///C:/Users/joaco/Desktop/Desafio-Test%20-%20copia/src/controller/carts.controler.js:473:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-09-04T18:03:49.397Z"}
+error: Error en la validación de compra Cannot read properties of undefined (reading 'push') {"stack":"TypeError: Cannot read properties of undefined (reading 'push')\n    at validarCompra (file:///C:/Users/joaco/Desktop/Desafio-Test%20-%20copia/src/controller/carts.controler.js:473:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-09-04T18:04:43.260Z"}
+error: undefined {"code":400,"name":"Ya existe un producto con ese codigo","timestamp":"2024-09-09T12:00:55.599Z"}
+error: undefined {"code":400,"name":"Ya existe un producto con ese codigo","timestamp":"2024-09-09T12:05:46.625Z"}
+error: undefined {"_message":"product validation failed","errors":{"price":{"kind":"Number","message":"Cast to Number failed for value \"2.337.999\" (type string) at path \"price\"","name":"CastError","path":"price","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"2.337.999\"","value":"2.337.999","valueType":"string"}},"timestamp":"2024-09-09T12:11:17.812Z"}
